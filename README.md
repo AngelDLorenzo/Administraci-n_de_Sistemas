@@ -1,3 +1,17 @@
+## 📌 Resumen del proyecto
+
+Este proyecto consiste en el diseño, instalación y configuración de un servidor **Linux/Debian** para el Departamento de Bioinformática de la Universidad de Salamanca, cumpliendo los requisitos de una convocatoria oficial.
+
+El servidor proporciona de forma unificada:
+
+- **Gestión automática de usuarios** (altas/bajas con confirmación por email, cuotas, misma contraseña para SSH, webmail, SFTP y login físico).
+- **Servicios web** (portal de estado de servicios, espacio web personal con blog), **correo electrónico** (webmail + POP3) y **SFTP**.
+- **Monitorización de recursos** (CPU, memoria, disco, logs) con informes diarios en Perl.
+- **Copias de seguridad diarias**.
+- **Funcionalidades adicionales**: integración con Moodle, videoconferencia (Jitsi), alertas de login root, y sistema para venta de camisetas.
+
+Todo el desarrollo utiliza software libre (Perl, PHP, MariaDB) y sigue las restricciones del enunciado (sin llamadas a `system`/`exec` desde Perl, entorno sin gráficos, etc.). Los scripts de administración y demonios automatizan completamente la gestión del sistema.
+
 
 ## 🔧 Funcionalidades implementadas
 
